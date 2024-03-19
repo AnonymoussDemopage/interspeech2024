@@ -19,15 +19,12 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .method {
-      display: inline-block;
-      /*             width: 120px; /* Adjust the width as needed */
-      */ font-weight: bold;
+        display: inline-block;
+        font-weight: bold;
     }
 
     .explanation {
       display: inline-block;
-      /*             margin-left: 20px; /* Adjust the margin as needed */
-      */
     }
   </style>
 </head>
@@ -65,30 +62,197 @@
 
         <table border=0 frame=void rules=none>
             <tr>
-              <center><img src='fig/overview.png' width="40%"></center>
-              <center><span><b>Figure 1. Overview of Vec-Tok-VC+</b></span></center>
+                <center><img src='fig/overview.png' width="40%"></center>
+                <br><br>
+                <center><span><b>Figure 1. Overview of Vec-Tok-VC+</b></span></center>
             </tr>
             <tr><br></tr>
             <tr>
-              <td>
-                <center><img src='fig/components.png' width="50%"></center>
-                <center><span><b>Figure 2. The details of Vec-Tok-VC+. (a): the residual-enhanced K-Means decoupler. (b): the dual-mode teacher guidance module. (c): the converter and multi-codebook progressive constraint.</b></span> </center>
-              </td>
+                <td>
+                    <center><img src='fig/components.png' width="50%"></center>
+                    <br><br>
+                    <center><span><b>Figure 2. The details of Vec-Tok-VC+. (a): the residual-enhanced K-Means decoupler. (b): the dual-mode teacher guidance module. (c): the converter and multi-codebook progressive constraint.</b></span> </center>
+                </td>
             </tr>
 
-          </table>
-          <br><br>
+        </table>
+        <br><br>
 
 
 
 
 
+        <h2 id="demos">1. Demos<a name="demos"></a></h2>
+        <p><b>Inter-lingual Zero-shot Voice Conversion</b></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="text-align: center"><strong>Source speech</strong></th>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <th style="text-align: center"><strong>Target speaker</strong></th>
+                    <th style="text-align: center"><strong>SEF-VC</strong></th>
+                    <th style="text-align: center"><strong>LM-VC</strong></th>
+                    <th style="text-align: center"><strong>Vec-Tok-VC+(Our proposed)</strong></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+
+
+        <p><b>Cross-lingual Zero-shot Voice Conversion</b></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="text-align: center"><strong>Source speech</strong></th>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <th style="text-align: center"><strong>Target speaker</strong></th>
+                    <th style="text-align: center"><strong>SEF-VC</strong></th>
+                    <th style="text-align: center"><strong>LM-VC</strong></th>
+                    <th style="text-align: center"><strong>Vec-Tok-VC+(Our proposed)</strong></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+
+            </tbody>
+        </table>
 
 
 
 
 
+        <p><b>Noise-robust Zero-shot Voice Conversion</b></p>
 
+        <table>
+            <thead>
+                <tr>
+                    <th style="text-align: center"><strong>Source speech</strong></th>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <th style="text-align: center"><strong>Target speaker</strong></th>
+                    <th style="text-align: center"><strong>SEF-VC</strong></th>
+                    <th style="text-align: center"><strong>LM-VC</strong></th>
+                    <th style="text-align: center"><strong>Vec-Tok-VC+(Our proposed)</strong></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <th style="text-align: center"><strong>Text</strong></th>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                    <td style="text-align: left"><audio src="" controls="" preload=""></audio></td>
+                </tr>
+
+
+            </tbody>
+        </table>
 
 
 
