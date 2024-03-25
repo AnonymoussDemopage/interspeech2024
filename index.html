@@ -52,7 +52,7 @@
         <h2 id="abstract">Abstract<a name="abstract"></a></h2>
         <p>Zero-shot voice conversion (VC) aims to transform source speech into arbitrary unseen target voice while keeping the linguistic content unchanged. 
             Recent VC methods have made significant progress, but semantic losses in the decoupling process as well as training-inference mismatch still 
-            hinder conversion performance. In this paper, we propose Vec-Tok-VC+, a novel prompt-based zero-shot VC model improved from Vec-Tok [1] Codec, 
+            hinder conversion performance. In this paper, we propose Vec-Tok-VC+, a novel prompt-based zero-shot VC model improved from Vec-Tok Codec, 
             achieving voice conversion given only a 3s target speaker prompt. We design a residual-enhanced K-Means decoupler to enhance the semantic content
             extraction with a two-layer clustering process. Besides, we employ teacher-guided refinement to simulate the conversion process to eliminate the 
             training-inference mismatch, forming a dual-mode training strategy. Furthermore, we design a multi-codebook progressive loss function to constrain
@@ -282,13 +282,6 @@
                     <td style="width: 300px; text-align: center;"><audio src="demos/Proposed/noise/619.wav" controls="" preload="" style="width: 100%;"></audio></td>
                 </tr>
 
-                <tr>
-                    <td style="width: 300px; text-align: center;"><audio src="demos/src/114.wav" controls="" preload="" style="width: 100%;"></audio></td>
-                    <td style="width: 300px; text-align: center;"><audio src="demos/target_n/db1_002982.wav" controls="" preload="" style="width: 100%;"></audio></td>
-                    <!-- <td style="width: 300px; text-align: center;"><audio src="" controls="" preload="" style="width: 100%;"></audio></td>
-                    <td style="width: 300px; text-align: center;"><audio src="" controls="" preload="" style="width: 100%;"></audio></td> -->
-                    <td style="width: 300px; text-align: center;"><audio src="demos/Proposed/noise/114.wav" controls="" preload="" style="width: 100%;"></audio></td>
-                </tr>
 
               
                 <tr>
@@ -306,11 +299,7 @@
 
         <br>
         <br>
-        <cite>
-            <a href="https://arxiv.org/abs/2310.07246">
-            [1] X. Zhu, Y. Lv, Y. Lei, T. Li, W. He, H. Zhou, H. Lu, and L. Xie, “Vec-tok speech: speech vectorization and tokenization for neural speech generation,” CoRR, vol. abs/2310.07246, 2023.
-            </a>
-        </cite>
+
 
 
         <footer class="site-footer">
